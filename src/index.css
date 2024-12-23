@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  @apply bg-background dark:bg-darkBackground font-inter
+}
+.container{
+  @apply max-w-container mx-auto 
+}
