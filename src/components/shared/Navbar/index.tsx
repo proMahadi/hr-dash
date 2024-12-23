@@ -1,29 +1,12 @@
 import { SearchIcon,LightIcon, DarkIcon, NotificationIcon, PersonIcon, ProfileDropdownIcon } from "../../icons/icons";
 import profileImg from "../../../assets/profileImg.svg"
+import { useTheme } from "../../../contexts/ThemeContext";
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const Navbar: React.FC = () => {
-  const [isDark,setIsDark] = useState<"dark"|"light">(() => {
-    return (localStorage.getItem("theme") as "dark" | "light") || "light";
-  });
-
-  useEffect(() => {
-    if (isDark === "dark") {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDark]);
-  const handleLightMode = () => {
-    setIsDark("light");
-  };
-
-  const handleDarkMode = () => {
-    setIsDark("dark");
-  };
+  
+  const{isDark,handleLightMode,handleDarkMode}=useTheme()
 
 
   const darkIconStyle = isDark==="dark"?"#ffff":"#718096";
