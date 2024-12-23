@@ -11,6 +11,7 @@ export default {
         background: "#F9FAF5",
         darkBackground: "#475569",
         reverseWhite: "#1e293b",
+        alert:"#F96767",
         textLight: "#718096",
         primary: "#D9F27E",
         dark: "#222222",
