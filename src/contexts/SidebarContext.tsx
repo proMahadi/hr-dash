@@ -18,6 +18,9 @@ export const SidebarProvider: React.FC<{ children: ReactNode }> = ({ children })
       if (window.innerWidth < 768) {
         setShowSidebar(false);
       }
+      if (window.innerWidth > 768) {
+        setShowSidebar(true);
+      }
     };
 
     handleResize(); 

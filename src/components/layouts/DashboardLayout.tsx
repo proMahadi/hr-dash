@@ -1,12 +1,15 @@
 import { Outlet } from "react-router";
 import Sidebar from "../shared/Sidebar";
 import Navbar from "../shared/Navbar";
+import { useSidebar } from "../../contexts/SidebarContext";
 
 const DashboardLayout: React.FC = () => {
+  const{showSidebar}=useSidebar()
   return (
     <>
       <main className="container flex">
-        <aside className="relative">
+        <aside className="relative h-full">
+          <div className={`h-screen w-[253px] hidden md:block ${showSidebar?"md:block":"hidden"}`}/>
             <Sidebar/>
         </aside>
         <div className="w-full">

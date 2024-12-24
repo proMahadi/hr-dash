@@ -8,6 +8,7 @@ export default {
     extend: {
       maxWidth: {
         container: "1920px",
+        // container: "1440px", // according to figma
       },
       colors: {
         background: "#F9FAF5",
@@ -15,6 +16,8 @@ export default {
         reverseWhite: "#1e293b",
         alert:"#F96767",
         textLight: "#718096",
+        textDark: "#393C43",
+        borderColor: "#EEEEEF",
         primary: "#D9F27E",
         dark: "#222222",
       },

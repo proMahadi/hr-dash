@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
               fill={darkIconStyle}
             />
           </form>
-          <div className="flex justify-between gap-4 xl:gap-12 items-center">
+          <div className="flex justify-between gap-1 sm:gap-4 xl:gap-12 items-center">
             <button className="md:hidden w-fit h-fit" onClick={()=>setShowSidebar(!showSidebar)}>
               <FaBars className="text-xl text-textLight dark:text-white" />
             </button>
@@ -61,8 +61,8 @@ const Navbar: React.FC = () => {
                 </span>
               </button>
             </div>
-            <div className="flex gap-4 xl:gap-7">
-              <div className="flex items-center gap-x-4">
+            <div className="flex gap-1 sm:gap-4 xl:gap-7">
+              <div className="flex items-center gap-1 sm:gap-x-4">
                 <button className="h-10 w-10 rounded-full border border-textLight dark:border-white flex justify-center items-center relative">
                   <NotificationIcon fill={darkIconStyle} />
                   <span className="h-3 w-3 rounded-full bg-alert text-white text-[6px] flex justify-center items-center absolute top-0 right-0 z-10">
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
                   <PersonIcon fill={darkIconStyle} />
                 </button>
               </div>
-              <div className="flex items-center gap-3 w-[150px] cursor-pointer">
+              <div className="flex items-center gap-1 sm:gap-3 w-[150px] cursor-pointer">
                 <div className="text-right">
                   <h6 className="font-medium text-sm text-[#1F2937] dark:text-white">
                     Benjamin

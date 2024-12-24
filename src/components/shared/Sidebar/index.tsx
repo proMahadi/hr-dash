@@ -17,7 +17,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <section
-      className={`fixed top-0 left-0 md:static h-screen w-[253px] overflow-hidden hover:overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary dark:scrollbar-thumb-darkBackground scrollbar-thumb-rounded-full  border-r shadow dark:border-darkBackground bg-white dark:bg-reverseWhite z-50 duration-300 md:duration-0 ${
+      className={`fixed top-0 left-0  h-screen w-[253px] overflow-hidden hover:overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary dark:scrollbar-thumb-darkBackground scrollbar-thumb-rounded-full  border-r shadow dark:border-darkBackground bg-white dark:bg-reverseWhite z-50 duration-300 md:duration-0 ${
         showSidebar ? "left-0" : "left-[-253px]"
       }`}
     >
@@ -41,8 +41,8 @@ const Sidebar: React.FC = () => {
           <ul className="mt-3">
             {sidebarMenu.map((menu) => (
               <li className="relative z-[9999] group  ">
-                <div className="py-[18px] px-5 flex items-center justify-between text-textLight dark:text-white dark:group-hover:text-dark text-sm gap-x-4 cursor-pointer group-hover:bg-primary hover:font-bold hover:text-dark rounded-xl  ">
-                  <div className="flex items-center gap-x-4">
+                <div className="py-[18px] px-5 flex items-center justify-between text-textLight dark:text-white dark:group-hover:text-dark text-sm gap-x-4 cursor-pointer group-hover:bg-primary  rounded-xl  ">
+                  <div className="flex items-center gap-x-4 group-hover:font-bold group-hover:text-dark">
                     <menu.icon className="text-xl" />
                     <span className="capitalize">{menu.label}</span>
                   </div>
