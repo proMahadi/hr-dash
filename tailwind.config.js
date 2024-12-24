@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwind-scrollbar');
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
@@ -21,5 +23,7 @@ export default {
       inter: ["Inter", "serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    plugin({ nocompatible: true }),
+  ],
 };
