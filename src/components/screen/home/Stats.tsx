@@ -4,7 +4,7 @@ import { statsData } from "../../../data/statsData";
 
 const Stats: React.FC = () => {
   return (
-    <div className="flex flex-col gap-5">
+    <section className="flex flex-col gap-5">
       {/* report and stats varients */}
       <div className="flex items-center gap-6 justify-between">
         <div>
@@ -21,12 +21,12 @@ const Stats: React.FC = () => {
         </button>
       </div>
       {/* report and stats varients */}
-      <ul className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
+      <ul className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-8">
         {statsData.map((stat) => (
           <StatsCard key={stat.id} stat={stat}/>
         ))}
       </ul>
-    </div>
+    </section>
   );
 };
 

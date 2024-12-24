@@ -33,7 +33,7 @@ const StatsCard: React.FC<StatsCardProps> = ({ stat }) => {
           candidate
         </p>
         <div>
-          <p className="text-textLight dark:text-white text-xs capitalize">
+          <p className="text-textLight dark:text-white text-xs capitalize text-right">
             last month
           </p>
           <div className="py-[6px] px-[10px] mt-[6px] rounded-lg bg-background dark:bg-darkBackground text-base text-dark dark:text-white flex items-center gap-[6px]">

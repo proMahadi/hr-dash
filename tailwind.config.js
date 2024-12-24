@@ -18,6 +18,7 @@ export default {
         textLight: "#718096",
         textDark: "#393C43",
         borderColor: "#EEEEEF",
+        yellow: "#FCCE44",
         primary: "#D9F27E",
         dark: "#222222",
       },
