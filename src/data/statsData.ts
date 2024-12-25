@@ -34,7 +34,7 @@ export const statsData:Stats[]=[
     },
     {
         id:"3",
-        statof:"Total Invitation",
+        statof:"Total Hiring",
         icon:stat3,
         hiredNow:"84",
         hiredPrev:"72",
