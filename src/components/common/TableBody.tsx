@@ -73,7 +73,7 @@ const handleIsCheck = ({ id }: { id: string }) => {
           <td className="p-4">
             <div className="flex items-center gap-3">
               <div className="relative  h-2 w-[93px] rounded-[4px] bg-background dark:bg-darkBackground overflow-hidden">
-                <div className={`absolute top-0 left-0 z-20 h-2  bg-red-500 rounded-[4px]
+                <div className={`absolute top-0 left-0 z-20 h-2  rounded-[4px]
                  ${worker.licenseUse===1 && "bg-license1"} 
                  ${worker.licenseUse===2 && "bg-license2"} 
                  ${worker.licenseUse===3 && "bg-license3"} 
