@@ -21,6 +21,11 @@ export default {
         yellow: "#FCCE44",
         primary: "#D9F27E",
         dark: "#222222",
+        license1: "#F41E7E",
+        license2: "#FF9800",
+        license3: "#5A05FF",
+        license4: "#38B2F5",
+        license5: "#04D73D",
       },
     },
     fontFamily: {

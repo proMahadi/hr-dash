@@ -15,10 +15,10 @@ export const SidebarProvider: React.FC<{ children: ReactNode }> = ({ children })
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 768) {
+      if (window.innerWidth < 1024) {
         setShowSidebar(false);
       }
-      if (window.innerWidth > 768) {
+      if (window.innerWidth > 1024) {
         setShowSidebar(true);
       }
     };

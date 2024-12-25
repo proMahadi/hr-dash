@@ -29,8 +29,8 @@ const Employees: React.FC = () => {
   return (
     <section className="p-6 bg-white dark:bg-reverseWhite rounded-xl ">
       {/* filter and add */}
-      <div className="flex items-center justify-between gap-6">
-        <ul className="p-1.5 flex items-center gap-6 rounded-lg bg-background dark:bg-darkBackground w-fit">
+      <div className="flex xl:flex-row flex-col xl:items-center justify-between gap-6">
+        <ul className="p-1.5 flex flex-wrap lg:flex-nowrap items-center gap-6 rounded-lg bg-background dark:bg-darkBackground w-fit">
           <li className="px-3 py-1.5 bg-white dark:bg-reverseWhite font-semibold text-sm text-dark dark:text-white rounded-lg flex items-center gap-2">
             <span>All hires</span>{" "}
             <span className="h-6 w-6 flex items-center justify-center text-dark bg-yellow rounded-[4px]">

@@ -17,7 +17,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <section
-      className={`fixed top-0 left-0  h-screen w-[253px] overflow-hidden hover:overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary dark:scrollbar-thumb-darkBackground scrollbar-thumb-rounded-full  border-r shadow dark:border-darkBackground bg-white dark:bg-reverseWhite z-50 duration-300 md:duration-0 ${
+      className={`fixed top-0 left-0  h-screen w-[253px] overflow-hidden hover:overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary dark:scrollbar-thumb-darkBackground scrollbar-thumb-rounded-full  border-r shadow dark:border-darkBackground bg-white dark:bg-reverseWhite z-50 duration-300 lg:duration-0 ${
         showSidebar ? "left-0" : "left-[-253px]"
       }`}
     >
@@ -29,7 +29,7 @@ const Sidebar: React.FC = () => {
           />
           <div
             onClick={() => setShowSidebar(!showSidebar)}
-            className={`md:hidden  flex justify-center items-center text-textLight dark:text-white z-10 duration-300  `}
+            className={`lg:hidden  flex justify-center items-center text-textLight dark:text-white z-10 duration-300  `}
           >
             <FaArrowLeft className="text-lg" />
           </div>

@@ -9,7 +9,7 @@ const DashboardLayout: React.FC = () => {
     <>
       <main className="container flex">
         <aside className="relative h-full">
-          <div className={`h-screen w-[253px] hidden md:block ${showSidebar?"md:block":"hidden"}`}/>
+          <div className={`h-screen w-[253px] hidden lg:block ${showSidebar?"lg:block":"hidden"}`}/>
             <Sidebar/>
         </aside>
         <div className="w-full">

@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
             />
           </form>
           <div className="flex justify-between gap-1 sm:gap-4 xl:gap-12 items-center">
-            <button className="md:hidden w-fit h-fit" onClick={()=>setShowSidebar(!showSidebar)}>
+            <button className="lg:hidden w-fit h-fit" onClick={()=>setShowSidebar(!showSidebar)}>
               <FaBars className="text-xl text-textLight dark:text-white" />
             </button>
             <div className="bg-background dark:bg-darkBackground w-fit p-2 flex items-center gap-x-[10px] rounded-lg">

@@ -12,8 +12,8 @@ const TableHeader: React.FC<TableHeaderItems> = ({ items }) => {
     <thead>
       <tr className="border border-borderColor rounded-lg">
         {items.map((head, index) => (
-          <th className={`p-4 text-left text-textDark dark:text-white font-medium text-sm   ${index == lastIndex ? "text-right" : ""}`}>
-            {index == 0 && <input type="checkbox" />}
+          <th className={`p-4 text-left text-textDark dark:text-white font-medium text-xs lg:text-sm   ${index == lastIndex ? "text-right" : ""} `}>
+            {index == 0 && <input type="checkbox" className="mr-2 rounded-[4px] bg-transparent" />}
             <span>{head.item}</span>
           </th>
         ))}
